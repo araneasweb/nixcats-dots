@@ -1,0 +1,97 @@
+{
+  "nodes": {
+    "gitgraph-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1748879227,
+        "narHash": "sha256-QQcqLUJIligXW9bGQR1sDmg9efNFuTWQGCk7E9ni8Tc=",
+        "owner": "isakbm",
+        "repo": "gitgraph.nvim",
+        "rev": "c16daa7d7dd597caf9085644c009cfa80b75db8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "isakbm",
+        "ref": "main",
+        "repo": "gitgraph.nvim",
+        "type": "github"
+      }
+    },
+    "layers-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1734880637,
+        "narHash": "sha256-YIqjrAcDWHI6T3PNe9lZ0TgavRlp+8S9Rg6SAY0CVWE=",
+        "owner": "debugloop",
+        "repo": "layers.nvim",
+        "rev": "ebbb386d7aea84a04bf7eab0873975b2e9d695a5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "debugloop",
+        "ref": "main",
+        "repo": "layers.nvim",
+        "type": "github"
+      }
+    },
+    "nixCats": {
+      "locked": {
+        "lastModified": 1767604651,
+        "narHash": "sha256-itAnxzTpWpY1s3LA/oNngOuZDXT5U5JUZP5fApwx9gs=",
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "rev": "3c9bc4d7123e1b48d92f25ba505b889af541e897",
+        "type": "github"
+      },
+      "original": {
+        "owner": "BirdeeHub",
+        "repo": "nixCats-nvim",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1767364772,
+        "narHash": "sha256-fFUnEYMla8b7UKjijLnMe+oVFOz6HjijGGNS1l7dYaQ=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "16c7794d0a28b5a37904d55bcca36003b9109aaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "plugins-treesitter-textobjects": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767434017,
+        "narHash": "sha256-5VeIAW09my+4fqXbzVG7RnLXrjpXAk/g2vd7RbhNws8=",
+        "owner": "nvim-treesitter",
+        "repo": "nvim-treesitter-textobjects",
+        "rev": "28a3494c075ef0f353314f627546537e43c09592",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-treesitter",
+        "ref": "main",
+        "repo": "nvim-treesitter-textobjects",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gitgraph-nvim": "gitgraph-nvim",
+        "layers-nvim": "layers-nvim",
+        "nixCats": "nixCats",
+        "nixpkgs": "nixpkgs",
+        "plugins-treesitter-textobjects": "plugins-treesitter-textobjects"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
