@@ -344,16 +344,21 @@ vim.api.nvim_create_autocmd("FileType", {
 	pattern = "haskell",
 	callback = function(ev)
 		local ht = require("haskell-tools")
-		local opts = { noremap = true, silent = true, buffer = ev.buf }
 
-		vim.keymap.set("n", "<space>cl", vim.lsp.codelens.run, opts)
-		vim.keymap.set("n", "<space>hs", ht.hoogle.hoogle_signature, opts)
-		vim.keymap.set("n", "<space>ea", ht.lsp.buf_eval_all, opts)
-		vim.keymap.set("n", "<leader>rr", ht.repl.toggle, opts)
-		vim.keymap.set("n", "<leader>rf", function()
+		local function map(mode, lhs, rhs, desc)
+			vim.keymap.set(mode, lhs, rhs, { noremap = true, silent = true, buffer = ev.buf, desc = desc })
+		end
+
+		map("n", "<leader>cl", vim.lsp.codelens.run, "Haskell: run code lenses")
+		map("n", "<leader>hs", ht.hoogle.hoogle_signature, "Haskell: Hoogle signature")
+		map("n", "<leader>ea", ht.lsp.buf_eval_all, "Haskell: eval all (HLS)")
+		map("n", "<leader>rr", ht.repl.toggle, "Haskell: toggle REPL")
+
+		map("n", "<leader>rf", function()
 			ht.repl.toggle(vim.api.nvim_buf_get_name(ev.buf))
-		end, opts)
-		vim.keymap.set("n", "<leader>rq", ht.repl.quit, opts)
+		end, "Haskell: toggle REPL (current file)")
+
+		map("n", "<leader>rq", ht.repl.quit, "Haskell: quit REPL")
 	end,
 })
 
