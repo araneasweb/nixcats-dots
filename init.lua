@@ -448,7 +448,7 @@ if ok_conform then
 		},
 
 		format_on_save = {
-			timeout_ms = 2000,
+			timeout_ms = 10000,
 			lsp_format = "fallback",
 		},
 	})
