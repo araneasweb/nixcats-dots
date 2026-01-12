@@ -436,6 +436,7 @@ if ok_conform then
 			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 			plaintex = { "latexindent", stop_after_first = true },
 			tex = { "latexindent", stop_after_first = true },
+			racket = { "racketfmt", stop_after_first = true },
 		},
 
 		format_on_save = {
