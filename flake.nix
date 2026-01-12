@@ -100,6 +100,7 @@
             plenary-nvim
             nui-nvim
             nvim-treesitter-context
+            vim-racket
           ];
         };
 
