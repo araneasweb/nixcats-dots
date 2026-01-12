@@ -101,16 +101,9 @@
             nui-nvim
             nvim-treesitter-context
             vim-racket
+            nvim-treesitter.withAllGrammars
+            pkgs.neovimPlugins.treesitter-textobjects
           ];
-        };
-
-        optionalPlugins = {
-          general = {
-            treesitter = with pkgs.vimPlugins; [
-              pkgs.neovimPlugins.treesitter-textobjects
-              nvim-treesitter.withAllGrammars
-            ];
-          };
         };
 
         sharedLibraries = { };
