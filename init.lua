@@ -436,13 +436,18 @@ if ok_conform then
 			typescriptreact = { "prettierd", "prettier", stop_after_first = true },
 			plaintex = { "latexindent", stop_after_first = true },
 			tex = { "latexindent", stop_after_first = true },
-			racket = { "racofmt", stop_after_first = true },
+			racket = { "racofixw", stop_after_first = true },
 		},
 
 		formatters = {
 			racofmt = {
 				command = "raco",
 				args = { "fmt", "--width", "80", "--max-blank-lines", "1" },
+				stdin = true,
+			},
+			racofixw = {
+				command = "raco",
+				args = { "fixw" },
 				stdin = true,
 			},
 		},
