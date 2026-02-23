@@ -88,6 +88,8 @@ if ok_ts then
 			"lua",
 			"markdown",
 			"typescript",
+			"nix",
+			"css",
 		},
 		highlight = {
 			enable = true,
