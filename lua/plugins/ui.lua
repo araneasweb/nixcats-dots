@@ -10,6 +10,10 @@ require("which-key").add({
 	{ "<leader>r", group = "[R]ename/REPL" },
 	{ "<leader>t", group = "[T]oggle" },
 	{ "<leader>x", group = "E[x]ecute" },
+	{ "<leader>l", group = "[L]anguage" },
+	{ "<leader>lh", group = "[H]askell" },
+	{ "<leader>ls", group = "[S]exp" },
+	{ "<leader>lc", group = "[C]onjure" },
 })
 
 require("eyeliner").setup({

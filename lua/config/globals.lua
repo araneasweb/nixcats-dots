@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
-vim.g.maplocalleader = " "
+vim.g.maplocalleader = ","
+vim.g.loaded_sexp_mappings_for_regular_people = 1
 
 local function from_nix(path, default)
 	if type(nixCats) ~= "function" then
