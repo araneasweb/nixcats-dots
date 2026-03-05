@@ -67,10 +67,12 @@
         startupPlugins = {
           general = with pkgs.vimPlugins; [
             catppuccin-nvim
+            cmp-conjure
             cmp-nvim-lsp
             cmp-path
             cmp_luasnip
             conform-nvim
+            conjure
             eyeliner-nvim
             fidget-nvim
             friendly-snippets
@@ -93,12 +95,16 @@
             nvim-web-devicons
             oil-nvim
             plenary-nvim
+            rainbow-delimiters-nvim
             telescope-fzf-native-nvim
             telescope-nvim
             telescope-ui-select-nvim
             vim-fugitive
             vim-racket
+            vim-racket
             vim-rhubarb
+            vim-sexp
+            vim-sexp-mappings-for-regular-people
             vim-sleuth
             which-key-nvim
 
