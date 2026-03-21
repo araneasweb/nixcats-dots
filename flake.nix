@@ -100,6 +100,7 @@
             oil-git-status-nvim
             plenary-nvim
             rainbow-delimiters-nvim
+            render-markdown-nvim
             telescope-fzf-native-nvim
             telescope-nvim
             telescope-ui-select-nvim
