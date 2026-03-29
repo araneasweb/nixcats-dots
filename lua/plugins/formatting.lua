@@ -15,6 +15,8 @@ conform.setup({
 		nix = { "nixpkgs_fmt", stop_after_first = true },
 		plaintex = { "latexindent", stop_after_first = true },
 		racket = { "racofixw", stop_after_first = true },
+		sbt = { lsp_format = "prefer" },
+		scala = { lsp_format = "prefer" },
 		tex = { "latexindent", stop_after_first = true },
 		typescript = { "prettierd", "prettier", stop_after_first = true },
 		typescriptreact = { "prettierd", "prettier", stop_after_first = true },
