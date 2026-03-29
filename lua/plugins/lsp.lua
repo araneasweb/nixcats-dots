@@ -91,4 +91,5 @@ vim.lsp.enable({
 	"texlab",
 	"ts_ls",
 	"markdown",
+	"tinymist",
 })

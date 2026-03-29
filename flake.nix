@@ -47,6 +47,7 @@
             golangci-lint
             gopls
             haskell-language-server
+            haskellPackages.cornelis
             lazygit
             lua-language-server
             metals
@@ -58,13 +59,16 @@
             prettierd
             racket
             ripgrep
+            rust-analyzer
             selene
             stylua
             texlab
+            tinymist
             tree-sitter
+            typst
+            typstyle
             universal-ctags
-            rust-analyzer
-            haskellPackages.cornelis
+            websocat
           ];
         };
 
@@ -77,6 +81,7 @@
             cmp_luasnip
             conform-nvim
             conjure
+            cornelis
             eyeliner-nvim
             fidget-nvim
             friendly-snippets
@@ -91,6 +96,7 @@
             nvim-dap
             nvim-dap-ui
             nvim-dap-virtual-text
+            nvim-hs-vim
             nvim-lint
             nvim-lspconfig
             nvim-metals
@@ -99,14 +105,15 @@
             nvim-surround
             nvim-treesitter.withAllGrammars
             nvim-web-devicons
-            oil-nvim
             oil-git-status-nvim
+            oil-nvim
             plenary-nvim
             rainbow-delimiters-nvim
             render-markdown-nvim
             telescope-fzf-native-nvim
             telescope-nvim
             telescope-ui-select-nvim
+            typst-preview-nvim
             vim-fugitive
             vim-racket
             vim-racket
@@ -114,11 +121,8 @@
             vim-sexp
             vim-sexp-mappings-for-regular-people
             vim-sleuth
-            which-key-nvim
-
-            cornelis
-            nvim-hs-vim
             vim-textobj-user
+            which-key-nvim
 
             pkgs.neovimPlugins.gitgraph-nvim
             pkgs.neovimPlugins.layers-nvim
